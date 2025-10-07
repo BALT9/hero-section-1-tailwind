@@ -31,7 +31,7 @@
             <div>
                 <!-- <img src="https://blumbitvirtual.edtics.com/pluginfile.php/1/theme_edumy/headerlogo1/1714336857/logo-blumbit.png"
                     class="h-20 w-auto" alt="logo"> -->
-                    <h1 class="text-white md:text-3xl font-extrabold cursor-pointer">Logo</h1>
+                <h1 class="text-white md:text-3xl font-extrabold cursor-pointer">Logo</h1>
             </div>
 
             <!-- Botón hamburguesa solo en móvil -->
@@ -48,7 +48,7 @@
             <!-- Menú normal en escritorio -->
             <div class="hidden md:flex space-x-12 items-center text-white text-lg">
                 <a href="#" class="hover:text-gray-200 transition">Inicio</a>
-                <a href="#" class="hover:text-gray-200 transition">About Us</a>
+                <a href="#about-us" class="hover:text-gray-200 transition">About Us</a>
                 <a href="#" class="hover:text-gray-200 transition">Gallery</a>
                 <a href="#" class="hover:text-gray-200 transition">Contact</a>
                 <div class="flex gap-4">
@@ -123,16 +123,49 @@
                         </div>
 
                         <!-- Imagen sin bordes -->
-                        <img src="./img/cohete.png" alt="temario"
-                            class="md:w-100 w-60 h-auto object-cover" />
+                        <img src="./img/cohete.png" alt="temario" class="md:w-100 w-60 h-auto object-cover" />
                     </div>
                 </div>
 
             </div>
         </section>
 
-
     </header>
+    <section id="about-us" class="relative z-10 flex-1 flex items-center px-6 md:px-28 py-12 bg-white">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto">
+            <!-- Imagen o contenido visual -->
+            <div class="w-full md:w-1/2 p-4 relative flex justify-center items-center">
+                <!-- Círculo 1 -->
+                <div class="absolute bg-blue-600 rounded-full w-60 h-60 top-0 left-40 -z-10"></div>
+
+                <!-- Círculo 2 -->
+                <div class="absolute bg-blue-600 rounded-full w-50 h-50 bottom-0 right-30 -z-10"></div>
+
+                <!-- Imagen principal -->
+                <img src="./img/turista.png" alt="About Us Image"
+                    class="rounded-xl max-w-sm w-full h-auto relative z-10">
+            </div>
+            <!-- Texto -->
+            <div class="w-full md:w-1/2 p-4">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6 relative inline-block">
+                    About Us
+                    <span class="block w-16 h-1 bg-blue-600 rounded mt-2"></span> <!-- línea decorativa -->
+                </h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-8">
+                    We are a passionate team committed to delivering high-quality solutions that empower businesses to
+                    grow. With years of experience in design, development, and strategy, we help clients turn their
+                    ideas into
+                    reality.
+                </p>
+                <a href="#contact"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 
 </html>
